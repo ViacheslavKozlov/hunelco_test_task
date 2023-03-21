@@ -23,7 +23,7 @@ class ValidationError extends Error {
 }
 exports.ValidationError = ValidationError;
 const errHandler = (error, req, res, next) => {
-    if (error instanceof NotFound || error instanceof BadRequest) {
+    if (error instanceof NotFound || error instanceof BadRequest || error instanceof ValidationError) {
         return res.status(error.status).json({ message: error.message });
     }
     res.status(500).json({ message: error.message });
