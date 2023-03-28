@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { BadRequest, ValidationError } from "../helpers/errHandler";
 
-export async function movieRequest(req: Request, res: Response, next: NextFunction) {
+export async function movieRequest(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
     const { search_req } = req.query;
 
