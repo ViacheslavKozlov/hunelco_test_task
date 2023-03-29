@@ -7,7 +7,6 @@ This project is a test task for Hunelco Ltd as movie search and description gene
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Directory Structure](#directory-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Controllers](#controllers)
@@ -31,25 +30,6 @@ This project is a test task for Hunelco Ltd as movie search and description gene
 - Watchmode API
 - Sequalize
 - SQLite
-
-## Directory Structure
-.
-├── src
-│ ├── controllers
-│ │ ├── movieController.ts
-│ │ └── openaiController.ts
-│ ├── models
-│ │ └── movie.ts
-│ ├── routes
-│ │ └── movieRoutes.ts
-│ ├── services
-│ │ ├── errHandler.ts
-│ │ ├── openai.ts
-│ │ └── watchmode.ts
-│ ├── validation
-│ │ └── validation.ts
-│ └── server.ts
-└── package.json
 
 ## Installation
 
